@@ -11,20 +11,17 @@ input:focus, textarea:focus {
   background: lightgray;
 }
 
-.background {
-  background-image: url('../images/background.png');
-  background-size: cover;
-}
-
 .contenedor {
-  width: 1000px;
+  width: 75%;
   margin: auto;
   position: relative;
 }
 
 .portada {
   padding: 10px;
-  height: 540px;
+  height: auto;
+  background-image: url('../images/background.png');
+  background-size: cover;
 }
 
 .logotipo{
@@ -35,17 +32,20 @@ input:focus, textarea:focus {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 
 .menu {
   display: flex;
   flex-flow: row wrap-reverse;
   justify-content: flex-end;
+  align-items: center;
 }
 
 .menu li {
   display: inline-block;
-  margin: 20px;
+  margin: 5px;
+  padding: 3px;
   background:#1F313C;
 }
 
@@ -59,6 +59,9 @@ input:focus, textarea:focus {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  background-color: white;
+  border-radius: 15px;
+  opacity: 0.5;
 }
 
 .titulo {
@@ -73,26 +76,24 @@ input:focus, textarea:focus {
   text-decoration: underline;
 }
 
-.title-a {
-  font-size: 25px;
-  margin: 0px 10px 20px 10px;
+.title-a h3{
+  font-size: 20px;
+  margin: 10px;
   color:#232324;
   font-style: italic;
   padding: 8px;
 }
 
 .button {
-  width: 120px;
-  height: 30px;
   border-radius: 12px;
   color: white;
-  margin: 10px;
+  margin: auto;
+  margin-bottom: 25px;
   padding: 5px;
   cursor: pointer;
   text-decoration: none;
   font-size: 18px;
   background: linear-gradient(to left, grey,  #1F313C);
-  display: flex;
 }
 
 .title-b {
@@ -118,52 +119,38 @@ input:focus, textarea:focus {
   -webkit-box-shadow: 10px 10px 5px 0px rgba(145,153,144,1);
   -moz-box-shadow: 10px 10px 5px 0px rgba(145,153,144,1);
   box-shadow: 10px 10px 5px 0px rgba(145,153,144,1);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .service ol {
   padding: 25px;
 }
-.service.b {
-  height: 190px;
-}
 
-.derecha {
-  float: right;
+.imagServ {
   border-radius: 120px;
   border: 1px solid #273b47;
+  margin-right: 20px;
 }
-
-.izquierda {
-  float: left;
-  border-radius: 120px;
-  border: 1px solid #273b47;
-  position: relative;
-}
-
-.contenedor-service-a {
-  padding-left: 20px;
-}
-.contenedor-service-b {
-  margin-left: 370px;
-  position: relative;
-}
-
-
 
 .footer {
   background: #273b47;
   padding: 50px 10px;
 }
 
-.contacto {
+.footerC {
   display: flex;
-  width: 300px;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  justify-content: space-between;
   align-items: center;
 }
 
-.contacto img {
-  display: block;
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .contacto strong {
@@ -176,30 +163,19 @@ input:focus, textarea:focus {
   margin: 10px 10px 10px 0;
 }
 
-
-.footer .contenedor {
-  display: flex;
-  justify-content: space-between;
-}
-
-
 .formulario {
   display: flex;
-  width: 400px;
+  flex-flow: row wrap;
   color: white;
 }
 
-
 .col1, .col2 {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
 }
 
 .col1 {
   margin-right: 15px;
-}
-.col2 {
-  align-items: flex-start;
 }
 
 .col2 .button {
@@ -207,19 +183,16 @@ input:focus, textarea:focus {
 }
 
 .intereses label {
-  font-size: 12px;
+  display: flex;
+  flex-direction: row;
 }
 
-.formulario label, .sexo, .intereses {
-  margin-bottom: 10px;
+.intereses,.region {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-
-.sexo {
-  margin-top: 10px;
-}
-
-
-.tabla {
-  margin: 50px 0;
+.formulario label, .region, .intereses {
+  margin: 5px;
 }
