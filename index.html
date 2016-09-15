@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+  <!-- Procurement Page -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title> Stip - Procurement Services</title>
+    <link rel="stylesheet" type="text/css" href="css/SAProcurement.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Allerta" rel="stylesheet">
+  </head>
+
+  <body>
+    <section id="portada" class="portada background"> <!--shortview-->
+      <header id="header" class="header contenedor"> <!--header-->
+        <figure class="logotipo">
+          <img src="images/logo.png" width="180" alt="logotype"/>
+        </figure>
+        <nav class="menu contenedor">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="#services">Services</a>
+            </li>
+            <li>
+              <a href="blog.html">Blog</a>
+            </li>
+            <li>
+              <a href="#footer">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <div class="resumen contenedor">
+        <h1 class="titulo">
+        <strong><span>Procurement</span> Services and Supply Management</strong></h1><!--title-->
+        <h3 class="title-a">Creative ways to tackle the sourcing strategies and procurement opportunities</h3><!-- resumen -->
+        <a class="button" href="#services">Learn more...</a><!--button-->
+      </div>
+    </section>
+
+    <section id="services" class="services contenedor"> <!--services-->
+      <h2>How we can help you</h2><!--title-->
+      <article class="service"> <!-- service 1-->
+        <img class="derecha" src="images/service1.jpg" alt="service 1" width="350"/>
+        <div class="contenedor-service-a">
+          <h3 class="title-b">Service and Consulting</h3>
+          <ol>
+            <li>Bidding on MBS clusters</li>
+            <li>Saving and Productivity project</li>
+            <li>External Manufacturing management</li>
+            <li>Commodities negotiations</li>
+          </ol>
+        </div>
+      </article>
+
+      <article class="service b"> <!--service 2-->
+        <img class="izquierda" src="images/service2.jpg" alt="service 2" width="350"/>
+        <div class="contenedor-service-b">
+          <h3 class="title-b">
+          Procurement Outsourcing
+          </h3>
+            <ol>
+              <li>Strategic Sourcing Analysis</li>
+              <li>Market Intelligence</li>
+              <li>Supplier Selection and Evaluation</li>
+              <li>Procurement Backoffice</li>
+            </ol>
+        </div>
+      </article>
+    </section>
+
+    <footer class="footer">
+      <div class="contenedor">
+        <div class="contacto">
+          <img src="images/logo-color.png" alt="logotype color" width="150" />
+          <a href="tel:+5215545794359"><strong>Phone</strong> <span>5545794359</span></a>
+          <a href="mailto:contact@saprocurement.com"><strong>E-mail</strong> <span>contact@saprocurement.com</span></a>
+        </div>
+
+        <form class="formulario">
+          Contact us
+          <div class="col1">
+            <label for="nombre">Name</label>
+            <input type="text" required id="nombre" name="nombre"/>
+            <label for="email">E-mail</label>
+            <input type="email" required id="email" name="email"/>
+            <div class="region">
+              <label for="mexico">
+                <input type="radio" id="mexico" checked name="region" value="mexico"> Mexico
+              </label>
+              <label for="colombia">
+                <input type="radio" id="colombia" name="region" value="colombia"> Colombia
+              </label>
+            </div>
+            <div class="intereses">
+              <label for="cotizacion">
+                <input type="checkbox" checked id="cotizacion" name="intereses" value="cotizacion"> Quotation
+              </label>
+              <label for="reclamos">
+                <input type="checkbox" id="reclamos" name="intereses" value="reclamos"> Issues
+              </label>
+              <label for="comentarios">
+                <input type="checkbox" id="comentarios" name="intereses" value="comantarios"> Comments
+              </label>
+              <label for="otros">
+                <input type="checkbox" id="otros" name="intereses" value="otros"> Others
+              </label>
+            </div>
+          </div>
+          <div class="col2">
+            <label for="comentarios">Comment here</label>
+            <textarea name="comantarios" id="comentarios" cols="40" rows="7"></textarea>
+            <input type="submit" value="Sent" class="button"/>
+          </div>
+        </form>
+      </div>
+    </footer>
+  </body>
+</html>
